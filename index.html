@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Sugar Bakery</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- google fonts link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	</head>
+
+	<!-- ***** Body Start ***** -->
+	<body>
+
+		<!-- ***** Header Start ***** -->
+		<header class="chunk">
+			<nav>
+				<ul id="big-menu">
+					<li><a href="#" class="nav-item">home</a></li>
+					<li><a href="#menu" class="nav-item">menu</a></li>
+					<li class="logo"><span>sugar bakery.</span></li>
+					<li><a href="#location" class="nav-item">location</a></li>
+					<li><a href="#contact" class="nav-item">contact</a></li>
+				</ul>
+				<!-- hamburger menu icon -->
+				<a href="javascript:void(0);" id="hamburger-icon" onclick="hamburgerMenuClick()"><i class="fa fa-bars"></i></a></li>
+				<ul id="hamburger-menu" class="">
+					<li><a href="#" class="nav-item" onclick="hamburgerMenuClick()">home</a></li>
+					<li><a href="#menu" class="nav-item" onclick="hamburgerMenuClick()">menu</a></li>
+					<li><a href="#location" class="nav-item" onclick="hamburgerMenuClick()">location</a></li>
+					<li><a href="#contact" class="nav-item" onclick="hamburgerMenuClick()">contact</a></li>
+				</ul>
+				
+			</nav>
+		</header>
+		<!-- ***** Header Start ***** -->
+
+		<!-- ***** Home Start ***** -->
+		<section id="home" class="chunk">
+			<h1 class="logo">sugar bakery.</h1>
+		</section>
+		<!-- ***** Home End ***** -->
+
+		<!-- ***** Menu Start ***** -->
+		<section id="menu" class="chunk">
+			<div class="center-title">
+				<h2>our menu</h2>
+			</div>
+			<p id="overlay-instructions">click/hover over images for flavors!</p>
+			<div class="menu-container">
+				<div class="menu-item">
+					<p>donuts</p>
+					<div class="img-overlay">
+						<img src="./images/donuts.png">
+						<ul class="overlay-text">
+							<li><span>glazed</span></li>
+							<li><span>matcha</span></li>
+							<li><span>strawberry</span></li>
+							<li><span>ube</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu-item" id="lemon-bars">
+					<p>lemon bars</p>
+					<div class="img-overlay">
+						<img src="./images/lemon-bar-best-seller.gif">
+						<ul class="overlay-text">
+							<li><span>for orders of more than 1 dozen, please order ahead</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu-item">
+					<p>macarons</p>
+					<div class="img-overlay">
+						<img src="./images/macarons-green.png">
+						<ul class="overlay-text">
+							<li><span>pistachio</span></li>
+							<li><span>earl grey</span></li>
+							<li><span>lemon</span></li>
+							<li><span>raspberry</span></li>
+							<li><span>coffee</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu-item">
+					<p>cookies</p>
+					<div class="img-overlay">
+						<img src="./images/cookie-drizzle.png">
+						<ul class="overlay-text">
+							<li><span>chocolate chip</span></li>
+							<li><span>funfetti</span></li>
+							<li><span>gingersnap</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Menu End ***** -->
+
+		<!-- ***** Location Start ***** -->
+		<section id="location" class="chunk">
+			<div class="center-title">
+				<h2>location & hours</h2>
+			</div>
+
+			<div class="location-container">
+				<div class="location-item location-left" id="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.07476441736!2d-122.47261937517985!3d37.75769481909125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1647529389793!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>				</div>
+				<div class="location-right">
+					<div class="location-item" id="address">
+						<i class="fa-solid fa-map-pin fa-2x"></i>
+						<p>123 Street San Francisco, CA 12345</p>
+					</div>
+					<div class="location-item" id="hours">
+						<i class="fa-solid fa-clock fa-2x"></i>
+						<p>weekdays: 9AM - 5PM <br>weekends: 11AM - 5PM</p>
+					</div>
+					<div class="location-item" id="phone">
+						<i class="fa-solid fa-phone fa-2x"></i>
+						<p>(123) 456-7890</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Location End ***** -->
+
+		<!-- ***** Contact Start ***** -->
+		<section id="contact" class="chunk">
+			<div class="center-title">
+				<h2>contact us</h2>
+			</div>
+			<ul class="contact-container" id="socials">
+				<li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="https://www.yelp.com/"><i class="fa-brands fa-yelp"></i></a></li>
+				<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+			</ul>
+		</section>
+		<!-- ***** Contact End ***** -->
+
+		<!-- ***** Footer Start ***** -->
+		<section id="footer" class="chunk">
+			<p>&copy; <a rel="nofollow" href="https://leianne.netlify.app/">Leianne Fajutagana</a></p>
+		</section>
+		<!-- ***** Footer End ***** -->
+
+		<!-- JavaScript file -->
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- FontAwesome kit -->
+		<script src="https://kit.fontawesome.com/a7a2c3e7aa.js" crossorigin="anonymous"></script>
+	</body>
+	<!-- ***** Body End ***** -->
+</html>
